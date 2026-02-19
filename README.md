@@ -29,6 +29,4 @@ Enter password: MyPass123
 Output:
 Strong Password
 
-Output:
 
-Strong Password
