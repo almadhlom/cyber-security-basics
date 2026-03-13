@@ -1,4 +1,5 @@
-```python
+Here is the corrected file content:
+
 # Cyber Security Basics
 ==========================
 
@@ -102,11 +103,12 @@ risk_assessment_tool = risk_assessment.RiskAssessment()
 vulnerability_management_tool = vulnerability_management.VulnerabilityManagement()
 
 # Perform a risk assessment and vulnerability scan
-for index, (risk, vulnerability) in enumerate(zip(risk_assessment_tool.perform_risk_assessment(), vulnerability_management_tool.perform_vulnerability_scan())):
-    # Print the results
-    print(f"Risk Assessment Result {index+1}: {risk}")
-    print(f"Vulnerability Scan Result {index+1}: {vulnerability}")
+risk_assessment_result = risk_assessment_tool.perform_risk_assessment()
+vulnerability_scan_result = vulnerability_management_tool.perform_vulnerability_scan()
+
+# Print the results
+print("Risk Assessment Result:", risk_assessment_result)
+print("Vulnerability Scan Result:", vulnerability_scan_result)
 ```
 
-This example demonstrates how to use the `enumerate` function to iterate over the results of the risk assessment and vulnerability scan, printing the index and value of each result.
-```
+This example demonstrates how to use the risk assessment and vulnerability management tools provided by Cyber Security Basics.
