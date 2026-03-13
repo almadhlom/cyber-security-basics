@@ -1,3 +1,7 @@
+Issue title: Daily-Info
+Issue description:
+Python Tip: Use enumerate() for index+value in loops
+
 ```python
 # Cyber Security Basics
 ==========================
@@ -102,11 +106,10 @@ risk_assessment_tool = risk_assessment.RiskAssessment()
 vulnerability_management_tool = vulnerability_management.VulnerabilityManagement()
 
 # Perform a risk assessment and vulnerability scan
-for index, (risk, vulnerability) in enumerate(zip(risk_assessment_tool.perform_risk_assessment(), vulnerability_management_tool.perform_vulnerability_scan())):
+for i, (risk, vulnerability) in enumerate(zip(risk_assessment_tool.perform_risk_assessment(), vulnerability_management_tool.perform_vulnerability_scan())):
     # Print the results
-    print(f"Risk Assessment Result {index+1}: {risk}")
-    print(f"Vulnerability Scan Result {index+1}: {vulnerability}")
+    print(f"Risk Assessment Result {i+1}: {risk}")
+    print(f"Vulnerability Scan Result {i+1}: {vulnerability}")
 ```
 
 This example demonstrates how to use the `enumerate` function to iterate over the results of the risk assessment and vulnerability scan, printing the index and value of each result.
-```
