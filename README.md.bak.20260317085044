@@ -62,8 +62,6 @@ for index, url in enumerate(["https://www.example.com", "https://www.google.com"
         print(f"Status code for {url}: {response.status_code}")
     except requests.exceptions.RequestException as e:
         print(f"Error for {url}: {e}")
-        # Added a comment to explain the purpose of this block
-        # This block catches any exceptions that occur during the request and prints an error message
 ```
 
 ## Security Best Practices
