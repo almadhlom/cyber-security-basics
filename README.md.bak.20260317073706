@@ -55,7 +55,7 @@ Once you have installed the project, you can run the example code to see how the
 ```python
 import requests
 
-# Use enumerate() for index+value in loops, as recommended in Python best practices
+# Use enumerate() for index+value in loops
 for index, url in enumerate(["https://www.example.com", "https://www.google.com"]):
     try:
         response = requests.get(url)
