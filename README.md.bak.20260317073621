@@ -1,5 +1,4 @@
-```markdown
-# Daily-Info
+# Cyber Security Basics
 =========================
 
 ## Table of Contents
@@ -55,13 +54,15 @@ Once you have installed the project, you can run the example code to see how the
 ```python
 import requests
 
-# Use enumerate() for index+value in loops
-for index, url in enumerate(["https://www.example.com", "https://www.google.com"]):
+def send_request(url):
     try:
         response = requests.get(url)
-        print(f"Status code for {url}: {response.status_code}")
+        print(response.status_code)
     except requests.exceptions.RequestException as e:
-        print(f"Error for {url}: {e}")
+        print(e)
+
+url = "https://www.example.com"
+send_request(url)
 ```
 
 ## Security Best Practices
@@ -109,4 +110,5 @@ We welcome contributions from the community! If you have a suggestion or patch, 
 -------
 
 Cyber Security Basics is released under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+
+Note: The above README content is a sample and may need to be modified to fit the specific needs of your project.
