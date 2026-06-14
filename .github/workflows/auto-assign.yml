@@ -1,0 +1,17 @@
+name: Auto Assign
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Auto-assign on /assign command
+        uses: pozil/auto-assign-issue@v1
+        if: ${{ contains(github.event.comment.body, '/assign') }}
+        with:
+          assignees: ${{ github.event.comment.user.login }}
+          allowSelfAssign: true
