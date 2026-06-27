@@ -75,3 +75,6 @@ This repository is a collection of resources and guides for cyber security basic
 Issue #199: Daily-Info
 
 [View issue](https://github.com/almadhlom/cyber-security-basics/issues/199)
+
+We provide easy-to-follow guides and resources to help you get started with digital safety. Check out our step-by-step checklist below to secure your personal devices and online accounts:
+* [Cybersecurity Checklist](cyber-security-checklist.md)
