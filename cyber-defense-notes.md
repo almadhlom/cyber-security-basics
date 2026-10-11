@@ -30,3 +30,8 @@
 ### Best Practices
 - Install software only from trusted sources
 - Regularly review account activity
+
+### Cyber Defense Strategies
+- Implement defense-in-depth principles across all systems
+- Monitor network traffic for unusual or malicious activity
+- Conduct regular security audits and vulnerability scans
